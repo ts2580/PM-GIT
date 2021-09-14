@@ -10,3 +10,11 @@ $ git checkout -b main : main 브랜치 생성 후 해당 브랜치로 이동
 $ git branch  -M main : 기본 브랜치를 main으로
 $ git status : 상태 확인
 
+4. 파일을 생성하고, add commit 하기
+  git add git-study.txt
+  git commit : commit에 대한 메세지를 남기기 위해 vi에디터가 실행
+	- i : 입력모드로 변경
+	- esc : 입력모드에서 나오기
+	- wq : 저장, 종료
+  git commit -m 'message' : commit하고 짧은 메세지 작성(굳이 vi editor 안들어가도 댐)
+  git log : commit 내역 확인
