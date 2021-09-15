@@ -1,14 +1,14 @@
 1. 계정정보 등록
-$ git config --global user.name trstyq
-$ git config --global user.email trstyq@gmail.com
+   git config --global user.name trstyq
+   git config --global user.email trstyq@gmail.com
 
 2. git-prac 폴더를 git이 관리하는 폴더로 지정
-$ git init
+   git init
 
 3. 기본으로 생성되는 master 브랜치에서 main 브랜치로
-$ git checkout -b main : main 브랜치 생성 후 해당 브랜치로 이동
-$ git branch  -M main : 기본 브랜치를 main으로
-$ git status : 상태 확인
+   git checkout -b main : main 브랜치 생성 후 해당 브랜치로 이동
+   git branch  -M main : 기본 브랜치를 main으로
+   git status : 상태 확인
 
 4. 파일을 생성하고, add commit 하기
   git add git-study.txt
@@ -28,3 +28,7 @@ $ git status : 상태 확인
       git reset --hard<commit> : commit 내역을 되돌리고 파일을 rollback
       git revert <commit> : 지정한 commit으로 인해 발생한 변경을 되돌리고, 새로운 commit을 생성해 commit에 추가!sadad
 
+6. 원격 리포지토리 추가 및 push/pull
+     git remote add origin <https://github.com/ts2580/PM-GIT>
+     git pull --allow-unrelated-histories origin main
+	* 원격 리포지토리에서 처음 pull 할 때만 --allow-unrelated-histories 사용 
