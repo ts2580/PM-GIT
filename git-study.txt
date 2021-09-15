@@ -35,3 +35,21 @@
      git push -u origin main 
 	-u : push 할 기본 원격 저장소와 브랜치를 기억
 	      앞으로는 git push만 해도 원격 저장소와 브랜치를 잡아준다.
+
+7. git branch 
+   git checkout -b <branchName> : 새로운 브랜치를 생성하고 이동
+   git checkout <branchName> : 기존 브랜치로 이동
+   git merge <branchName> : 브랜치 병합(병합할 branch의 commit 내역도 병합)
+   git merge -squash <branchName> : commit 내역 뺴고 병합. 
+			********병합 후 반드시 commit 해줄것
+
+8. conflict
+   동시에 복수의 사용자가 같은 파일의 같은 라인에 수정을 발생시키면 발생
+   바료ㅐㅇ 라인을 git이 표시해줌
+  사용할 코드를 제외한 나머지는 삭제하고 add 이후 commit 하여 충돌 해결
+
+
+
+
+
+
