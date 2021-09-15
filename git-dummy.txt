@@ -1,1 +1,1 @@
-git reset 연습
+[userA] git 충돌연습
