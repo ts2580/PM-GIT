@@ -1,14 +1,14 @@
 1. 계정정보 등록
-  git config --global user.name trstyq
-  git config --global user.email trstyq@gmail.com
+$ git config --global user.name trstyq
+$ git config --global user.email trstyq@gmail.com
 
 2. git-prac 폴더를 git이 관리하는 폴더로 지정
-  git init
+$ git init
 
 3. 기본으로 생성되는 master 브랜치에서 main 브랜치로
-  git checkout -b main : main 브랜치 생성 후 해당 브랜치로 이동
-  git branch  -M main : 기본 브랜치를 main으로
-  git status : 상태 확인
+$ git checkout -b main : main 브랜치 생성 후 해당 브랜치로 이동
+$ git branch  -M main : 기본 브랜치를 main으로
+$ git status : 상태 확인
 
 4. 파일을 생성하고, add commit 하기
   git add git-study.txt
@@ -17,6 +17,7 @@
 	- esc : 입력모드에서 나오기
 	- wq : 저장, 종료
   git commit -m 'message' : commit하고 짧은 메세지 작성(굳이 vi editor 안들어가도 댐)
+<<<<<<< HEAD
   git log : commit 내역 확인
 
 5. 특정 commit 지점으로 되돌리기
@@ -25,3 +26,5 @@
       git reset --mixed<commit> : commit 내역을 되돌리고 staging 까지 취소
       -----------------파일 영향 없음--------------------
       git reset --hard<commit> : commit 내역을 되돌리고 파일을 rollback
+      git revert <commit> : 지정한 commit으로 인해 발생한 변경을 되돌리고, 새로운 commit을 생성해 commit에 추가!sadad
+
