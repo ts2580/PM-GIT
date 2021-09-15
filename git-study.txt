@@ -31,4 +31,7 @@
 6. 원격 리포지토리 추가 및 push/pull
      git remote add origin <https://github.com/ts2580/PM-GIT>
      git pull --allow-unrelated-histories origin main
-	* 원격 리포지토리에서 처음 pull 할 때만 --allow-unrelated-histories 사용 
+	* 원격 리포지토리에서 처음 pull 할 때만 --allow-unrelated-histories 사용
+     git push -u origin main 
+	-u : push 할 기본 원격 저장소와 브랜치를 기억
+	      앞으로는 git push만 해도 원격 저장소와 브랜치를 잡아준다.
